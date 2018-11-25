@@ -1,5 +1,12 @@
- language: node_js
- node_js: node
- cache:
-   directories:
-     - node_modules
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: eHvWb4+nPZOOZpRF003iNx6zHRHNMMhKUyYVwBkQ8+8K3qYzbkyesjzx432QS36HJrQNmmoUi/dmtHg5xh1KzgUVrqLEoVxWG6/AvCiJ+hupN+TJbdztweg6PQeue8AP+cEKdSXJtQp++BxZ+IlYdDxTZzFS4iX6P9PzjB13okfnhAHVOBv1afA2Yt42g6VtvF2982Q6tZDKfnaejkOKLA+M+Ct+aAYFha6fZhKvuvUH1wfWD+Mm0GCQslQ5lu8QgUvsNYXVQeXo7WLyZmDPWrngQ6t3XkhA4HKzoMRPGS3Ye9GoUQrggvCNxletbWXXJJBsab+5XEggPlhtG9wklmjpDV1kJ4gn2F7MfbXjX+FVgL13+saOqjBwAGZDZHYynrL9GSnoWUV37weh4OotccFDS40NXhKccrjTSdrm+tqE7buEXQtUsMaK1eEO1vBwlq03gzOtXVdEmG70YCRzmlwJ3pABX67LxzFrjigUk1NBJwfQIrXQGI+lpvXbLzyAC+s0RcG9n5WeU03o6ph2WAwhtWvdwrW5TEuWfudWQaLvjFPIPkGV5mL6ooTpVKG0Yh8QHGbF1ymo2LlIS6SZKKyh7vxjZy6BJVQMRsqYpVMOIQ9gRW97DkmjmKsEcrhPdIdC3JbAUv/S2aIuvyOcwr4QebaizRvp98GA0vk592I=
+  app: nikola-client
+  on:
+    repo: Stelldevv/nikola-client
